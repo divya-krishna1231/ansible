@@ -1,0 +1,10 @@
+- name: variables from PLAY level
+  hosts: localhost
+  vars_files:
+  - varaible.yaml
+  tasks:
+  - name: check variables
+    vars: 
+      Course: "DevOps with AWS"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
