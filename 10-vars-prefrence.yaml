@@ -3,7 +3,7 @@
   hosts: localhost
   vars_files:
   - variables.yaml
-   vars_prompt:
+    vars_prompt:
   - name: PERSON
     prompt: please enter your name
     private: false
